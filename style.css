@@ -7,22 +7,25 @@
 .container {
   display: grid;
   place-items: center;
-  width: 100vw;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 0.125rem;
 }
 
 .slider {
-  width: 43.75rem;
-  height: 31.25rem;
+  width: 62.5rem;
+  height: 43.75rem;
+  border: 0.425rem solid rgb(235, 225, 111);
+  overflow: hidden;
 }
 
 .slider-line {
-  width: 306.25rem;
-  height: 31.25rem;
+  width: 437.5rem;
+  height: 43.75rem;
+  left: 0;
   display: flex;
   position: relative;
   transition: all 1s ease-out;
-  border: 0.0625rem 0.0625rem 0.0625rem solid black;
 }
 
 .arrow-button {

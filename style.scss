@@ -5,21 +5,27 @@
 }
 
 .container {
+    // width: 100vw;
+    // height: 100vh;
     display: grid;
     place-items: center;
-    width: 100vw;
-    height: 100vh;
-}
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center; 
+    gap: .125rem; 
+  }
+  
 
 .slider {
-    width: 43.75rem;
-    height: 31.25rem;
-    border: 0.125rem solid black;
+    width: 62.5rem;
+    height: 43.75rem;
+    border: 0.425rem solid rgb(235, 225, 111);
+    overflow: hidden;
 }
 
 .slider-line {
-    width: 306.25rem;
-    height: 31.25rem;
+    width: 437.5rem;
+    height: 43.75rem;
+    left: 0;
     display: flex;
     position: relative;
     transition: all 1s ease-out;
