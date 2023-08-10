@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .slider {
-  width: 37.5rem;
+  width: 43.75rem;
   height: 31.25rem;
 }/*# sourceMappingURL=style.css.map */
