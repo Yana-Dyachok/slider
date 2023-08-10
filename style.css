@@ -2,4 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.slider {
+  width: 37.5rem;
+  height: 31.25rem;
 }/*# sourceMappingURL=style.css.map */
