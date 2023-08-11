@@ -15,7 +15,7 @@
 .slider {
   width: 62.5rem;
   height: 43.75rem;
-  border: 0.425rem solid rgb(235, 225, 111);
+  border: 0.425rem solid rgb(226, 224, 209);
   overflow: hidden;
 }
 
@@ -33,12 +33,13 @@
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(226, 224, 209);
   border: none;
   cursor: pointer;
   transition: all 1s ease-out;
 }
 .arrow-button:hover, .arrow-button:focus {
   transform: scale(1.1);
-  background-color: rgb(86, 202, 202);
+  background-color: rgb(104, 232, 232);
+  color: rgb(226, 224, 209);
 }/*# sourceMappingURL=style.css.map */

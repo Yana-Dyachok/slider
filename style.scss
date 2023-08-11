@@ -4,21 +4,23 @@
     box-sizing: border-box;
 }
 
+$greyColor: rgb(226, 224, 209);
+$blueColor:rgb(15, 15, 228);
+
 .container {
     // width: 100vw;
     // height: 100vh;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center; 
-    gap: .125rem; 
-  }
-  
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.125rem;
+}
 
 .slider {
     width: 62.5rem;
     height: 43.75rem;
-    border: 0.425rem solid rgb(235, 225, 111);
+    border: 0.425rem solid $greyColor;
     overflow: hidden;
 }
 
@@ -36,7 +38,8 @@
     width: 3.3rem;
     height: 3.3rem;
     border-radius: 50%;
-    background-color: rgb(0, 119, 255);
+    color:$blueColor;
+    background-color: $greyColor;
     border: none;
     cursor: pointer;
     transition: all 1s ease-out;
@@ -44,6 +47,12 @@
     &:hover,
     &:focus {
         transform: scale(1.1);
-        background-color: rgb(86, 202, 202);
+        background-color: rgb(104, 232, 232);
+        color: $greyColor;
     }
+
+    &[disabled] {
+        background-color: $blueColor;
+    }
+    
 }
