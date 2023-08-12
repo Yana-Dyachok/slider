@@ -7,19 +7,20 @@
 body {
   display: grid;
   place-items: center;
+  gap: 2rem;
 }
 
 .container {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: center;
-  gap: 0.05rem;
 }
 
 .title {
   font-size: 5rem;
-  color: rgb(15, 15, 228);
+  color: rgb(226, 224, 209);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(15, 15, 228);
 }
 
 .slider {
@@ -57,4 +58,13 @@ body {
 .arrow-button[disabled] {
   color: rgb(226, 224, 209);
   background-color: rgb(15, 15, 228);
+}
+
+footer {
+  display: grid;
+  place-items: center;
+}
+
+.author {
+  color: rgb(226, 224, 209);
 }/*# sourceMappingURL=style.css.map */

@@ -11,21 +11,23 @@
 
 $greyColor: rgb(226, 224, 209);
 $blueColor: rgb(15, 15, 228);
+$hoverColor:  rgb(104, 232, 232);
 
 body {
-   @include positionGrid;    
+   @include positionGrid; 
+   gap: 2rem   
 }
 
 .container {
     @include positionGrid;    
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: .5fr 1fr .5fr;
     align-items: center;
-    gap: 0.05rem;
 }
 
 .title {
     font-size: 5rem;
-    color: $blueColor;
+    color:$greyColor;
+    text-shadow:.2rem .2rem .2rem  $blueColor;
 }
 
 .slider {
@@ -58,7 +60,7 @@ body {
     &:hover,
     &:focus {
         transform: scale(1.1);
-        background-color: rgb(104, 232, 232);
+        background-color:$hoverColor;
         color: $greyColor;
     }
 
@@ -66,4 +68,12 @@ body {
         color: $greyColor;
         background-color: $blueColor;
     }
+}
+
+footer {
+    @include positionGrid();
+}
+
+.author {
+    color:$greyColor;
 }
