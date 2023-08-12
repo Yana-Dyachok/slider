@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  display: grid;
+  place-items: center;
+}
+
 .container {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  gap: 0.125rem;
+  gap: 0.05rem;
 }
 
 .slider {
@@ -33,6 +38,7 @@
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
+  color: rgb(15, 15, 228);
   background-color: rgb(226, 224, 209);
   border: none;
   cursor: pointer;
@@ -42,4 +48,8 @@
   transform: scale(1.1);
   background-color: rgb(104, 232, 232);
   color: rgb(226, 224, 209);
+}
+.arrow-button[disabled] {
+  color: rgb(226, 224, 209);
+  background-color: rgb(15, 15, 228);
 }/*# sourceMappingURL=style.css.map */
