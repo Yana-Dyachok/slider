@@ -8,28 +8,28 @@
 
 @mixin positionGrid {
     display: grid;
-    place-items: center; 
+    place-items: center;
 }
 
 $greyColor: rgb(226, 224, 209);
 $blueColor: rgb(15, 15, 228);
-$hoverColor:  rgb(104, 232, 232);
+$hoverColor: rgb(104, 232, 232);
 
 body {
-   @include positionGrid; 
-   gap: 2rem   
+    @include positionGrid;
+    gap: 1rem;
 }
 
 .container {
-    @include positionGrid;    
-    grid-template-columns: .5fr 1fr .5fr;
+    @include positionGrid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     align-items: center;
 }
 
 .title {
     font-size: 5rem;
-    color:$greyColor;
-    text-shadow:.2rem .2rem .2rem  $blueColor;
+    color: $greyColor;
+    text-shadow: 0.2rem 0.2rem 0.2rem $blueColor;
 }
 
 .slider {
@@ -62,7 +62,7 @@ body {
     &:hover,
     &:focus {
         transform: scale(1.1);
-        background-color:$hoverColor;
+        background-color: $hoverColor;
         color: $greyColor;
     }
 
@@ -78,5 +78,22 @@ footer {
 
 .author {
     font-family: 'MonteCarlo', cursive;
-    color:$blueColor;
+    color: $blueColor;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+
+    .slider {
+        grid-row: 1;
+        order: 1;
+    }
+
+    .arrow-button {
+        grid-row: 2;
+    }
 }
