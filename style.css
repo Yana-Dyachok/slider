@@ -17,6 +17,11 @@ body {
   gap: 0.05rem;
 }
 
+.title {
+  font-size: 5rem;
+  color: rgb(15, 15, 228);
+}
+
 .slider {
   width: 62.5rem;
   height: 43.75rem;
