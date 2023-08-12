@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
 @mixin positionGrid {
     display: grid;
     place-items: center; 
@@ -75,5 +77,6 @@ footer {
 }
 
 .author {
+    font-family: 'MonteCarlo', cursive;
     color:$greyColor;
 }
