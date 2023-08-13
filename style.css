@@ -85,4 +85,12 @@ footer {
   .prev-btn {
     margin-right: 6rem;
   }
+  .slider {
+    width: 55rem;
+    height: 43.75rem;
+  }
+  .slider-line {
+    width: 385rem;
+    height: 43.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */
