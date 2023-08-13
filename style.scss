@@ -100,13 +100,37 @@ footer {
     }
 
     .slider {
-        width: 55rem;
+        width: 50rem;
         height: 43.75rem;
     }
     
     .slider-line {
-        width: 385rem;
+        width: 350rem;
         height: 43.75rem;
+    }
+
+    .slider-line>img {
+        width: 50rem;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .slider {
+        width: 30rem;
+        height: 43.75rem;
+    }
+    
+    .slider-line {
+        width: 210rem;
+        height: 43.75rem;
+    }
+
+    .slider-line>img {
+        width: 30rem;
+        object-fit: cover;
     }
 
 }
