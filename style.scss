@@ -91,7 +91,7 @@ footer {
     color: $blueColor;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1180px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -128,7 +128,7 @@ footer {
 
 @media screen and (max-width: 700px) {
     .container {
-        padding: 0rem 1.5rem 0rem 1rem;
+        padding: 0rem 1rem 0rem 0.5rem;
     }
     .slider {
         width: 40rem;
@@ -143,16 +143,44 @@ footer {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 640px) {
     .slider {
-        width: 30rem;
+        width: 31.25rem;
     }
 
     .slider-line {
-        width: 210rem;
+        width: 218.75rem;
     }
 
     .slider-line > img {
-        width: 30rem;
+        width: 31.25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider {
+        width: 25rem;
+    }
+
+    .slider-line {
+        width: 175rem;
+    }
+
+    .slider-line > img {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider {
+        width: 20rem;
+    }
+
+    .slider-line {
+        width: 140rem;
+    }
+
+    .slider-line > img {
+        width: 20rem;
     }
 }
