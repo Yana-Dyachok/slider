@@ -16,14 +16,23 @@ $blueColor: rgb(15, 15, 228);
 $hoverColor: rgb(104, 232, 232);
 
 body {
+    min-height: 100vh;
     @include positionGrid;
     gap: 1rem;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .container {
     @include positionGrid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    align-items: center;
+    grid-template-columns: 0.15fr 1fr 0.15fr;
+}
+
+.next-btn {
+    order: 3;
 }
 
 .title {
@@ -37,6 +46,7 @@ body {
     height: 43.75rem;
     border: 0.425rem solid $greyColor;
     overflow: hidden;
+    order: 2;
 }
 
 .slider-line {
@@ -81,56 +91,68 @@ footer {
     color: $blueColor;
 }
 
-@media screen and (max-width: 1110px) {
-
+@media screen and (max-width: 1150px) {
     .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0rem 5rem;
+        padding: 0rem 3rem;
     }
 
     .arrow-button {
         margin-top: 2rem;
-        order: 2;
     }
 
     .prev-btn {
         margin-right: 6rem;
+        order: 2;
     }
+}
 
+@media screen and (max-width: 900px) {
     .slider {
         width: 50rem;
         height: 43.75rem;
     }
-    
+
     .slider-line {
         width: 350rem;
         height: 43.75rem;
     }
 
-    .slider-line>img {
+    .slider-line > img {
         width: 50rem;
         object-fit: cover;
     }
-
 }
 
 @media screen and (max-width: 700px) {
+    .container {
+        padding: 0rem 1.5rem 0rem 1rem;
+    }
+    .slider {
+        width: 40rem;
+    }
 
+    .slider-line {
+        width: 280rem;
+    }
+
+    .slider-line > img {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
     .slider {
         width: 30rem;
-        height: 43.75rem;
     }
-    
+
     .slider-line {
         width: 210rem;
-        height: 43.75rem;
     }
 
-    .slider-line>img {
+    .slider-line > img {
         width: 30rem;
-        object-fit: cover;
     }
-
 }
