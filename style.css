@@ -20,7 +20,7 @@ main {
 .container {
   display: grid;
   place-items: center;
-  grid-template-columns: 0.15fr 1fr 0.15fr;
+  grid-template-columns: 0.25fr 2fr 0.25fr;
 }
 
 .next-btn {
